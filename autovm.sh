@@ -22,8 +22,8 @@ config="server {
 apt update -y
 
 # Install requirements
-apt install -y nginx git unzip php7.2-fpm php7.2-cli php7.2-mysql php7.2-mbstring php7.2-gd php7.2-curl php7.2-zip php7.2-xml mysql-server python-pip && pip install spur pysphere crypto netaddr
-
+apt install -y nginx git unzip php7.2-fpm php7.2-cli php7.2-mysql php7.2-mbstring php7.2-gd php7.2-curl php7.2-zip php7.2-xml mysql-server python-pip && pip install --upgrade setuptools && pip install spur pysphere crypto netaddr
+ 
 # Random password
 password=$(openssl rand -base64 16)
 
